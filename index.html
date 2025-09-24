@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familien-Harmonie | Die einfachste App für Ihren Alltag</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts for a friendly look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Using Poppins as the default font */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Style for the hero background image section */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1200x800/a3e635/ffffff?text=Gl%C3%BCckliche+Familie');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ===== Header & Hero Section ===== -->
+    <!-- This section grabs the user's attention with the main promise -->
+    <header class="hero-bg text-white">
+        <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Schluss mit dem Familienchaos. <br> Hallo Harmonie.</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                Fühlen Sie sich im Familienalltag oft überfordert? Unsere einfache Task-App bringt Ordnung und Harmonie, damit Sie mehr unbeschwerte Zeit mit Ihrer Familie genießen.
+            </p>
+            <a href="#cta" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
+                Nutzen Sie jetzt die Einfachheit!
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== Problem Section ===== -->
+        <!-- Here, users recognize their own struggles -->
+        <section id="problem" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:pr-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Kommt Ihnen das bekannt vor?</h2>
+                        <p class="mb-4 text-gray-600">
+                            Vergessene Termine, unerledigte Aufgaben und ein ständiges Durcheinander bei den familiären Verpflichtungen. Schnell fühlt man sich überfordert, frustriert und hat die Sorge, dass im hektischen Familienleben wichtige Dinge untergehen.
+                        </p>
+                        <blockquote class="border-l-4 border-teal-500 pl-4 italic text-gray-500 my-6">
+                            "Es ist ungerecht, dass Familien mit der Organisation ihres Alltags so kämpfen müssen, wenn es doch schön und einfach sein sollte."
+                        </blockquote>
+                    </div>
+                    <div>
+                        <!-- Image showing a stressed family situation -->
+                        <img src="https://placehold.co/600x400/fecaca/991b1b?text=Stress+und+Chaos" alt="Eine überforderte Person am Schreibtisch" class="rounded-lg shadow-xl w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Testimonials Section ===== -->
+        <!-- Real stories from families like yours -->
+        <section id="testimonials" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-20">Hören Sie, was Familien wie Ihre sagen</h2>
+                <div class="grid lg:grid-cols-3 gap-x-8 gap-y-20 max-w-6xl mx-auto">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center relative pt-12">
+                        <img src="https://placehold.co/80x80/e0e7ff/4338ca?text=S" alt="Profilbild von Sarah K." class="rounded-full w-20 h-20 absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-white shadow-md">
+                        <p class="italic text-gray-600 mb-4">"Als berufstätige Mutter war ich ständig am Rande des Burnouts. Diese App hat alles verändert. Endlich habe ich den Kopf frei und kann die Abende mit meinen Kindern genießen, anstatt nur To-Do-Listen abzuarbeiten."</p>
+                        <p class="font-bold text-teal-600">- Sarah K., Mutter von zwei Kindern</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center relative pt-12">
+                        <img src="https://placehold.co/80x80/cffafe/0e7490?text=M" alt="Profilbild von Markus L." class="rounded-full w-20 h-20 absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-white shadow-md">
+                        <p class="italic text-gray-600 mb-4">"Ich war der König der vergessenen Termine. Elternabende, Sporttraining... peinlich. Seit wir die App nutzen, ist das vorbei. Alles ist an einem Ort, und ich fühle mich endlich wie ein verlässlicher Partner und Vater."</p>
+                        <p class="font-bold text-teal-600">- Markus L., Vater</p>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center relative pt-12">
+                        <img src="https://placehold.co/80x80/dcfce7/15803d?text=J" alt="Profilbild von Familie J." class="rounded-full w-20 h-20 absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-white shadow-md">
+                        <p class="italic text-gray-600 mb-4">"Das Beste ist die Einfachheit. Kein Schnickschnack, den niemand braucht. Wir haben unsere Wochenend-Pflichten in 10 Minuten organisiert und hatten dadurch einen ganzen spontanen Nachmittag im Park. Unbezahlbar!"</p>
+                        <p class="font-bold text-teal-600">- Familie Jensen</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Identity Transformation ===== -->
+        <!-- The final emotional payoff -->
+        <section id="transformation" class="py-16 md:py-24 text-center">
+            <div class="container mx-auto px-6">
+                <img src="https://placehold.co/150x150/a7f3d0/047857?text=Gelassen" alt="Eine gelassene und glückliche Person" class="rounded-full shadow-xl mx-auto mb-6 w-32 h-32">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Vom gestressten Manager zum gelassenen Familienoberhaupt.</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">
+                    Werden Sie zu der organisierten und ruhigen Person, die ihren Familienalltag im Griff hat und die Zeit mit ihren Liebsten in vollen Zügen genießt.
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== Final CTA Section ===== -->
+        <!-- The direct call to action, making it easy to buy -->
+        <section id="cta" class="bg-teal-600 text-white">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <h2 class="text-3xl font-bold mb-4">Bereit für ein harmonischeres Familienleben?</h2>
+                <p class="max-w-2xl mx-auto mb-8">
+                    Wenn Sie sich im täglichen Familienchaos überfordert fühlen und nach einfacher Organisation suchen, ist der Kauf unserer Task-App der richtige Schritt für Sie.
+                </p>
+                <a href="#" class="bg-white hover:bg-gray-200 text-teal-600 font-bold py-4 px-10 rounded-full text-xl transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
+                    Nutzen Sie jetzt die Einfachheit!
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-gray-800 text-gray-400 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ihre Familien-App. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
