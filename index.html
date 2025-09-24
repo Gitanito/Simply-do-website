@@ -9,6 +9,19 @@
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     
+    <!-- Custom Tailwind CSS Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-green': '#16a700',
+            }
+          }
+        }
+      }
+    </script>
+    
     <!-- Google Fonts for a modern look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,7 +102,7 @@
                         <p class="text-gray-600 mb-6">
                            Vergessene Termine, unerledigte Aufgaben und ein ständiges Durcheinander. Der Familienalltag kann sich schnell wie ein unübersichtliches Puzzle anfühlen, das Ihnen die letzte Energie raubt.
                         </p>
-                         <blockquote class="border-l-4 border-teal-500 pl-4 italic text-gray-700">
+                         <blockquote class="border-l-4 border-brand-green pl-4 italic text-gray-700">
                            "Es ist einfach nicht fair, dass das Organisieren des Familienlebens so kompliziert sein muss, wenn es doch die schönste Zeit unseres Lebens sein sollte."
                         </blockquote>
                     </div>
@@ -116,7 +129,7 @@
                             Wir wissen, wie überwältigend es sein kann, den Überblick zu behalten und den Kopf frei zu kriegen.
                         </p>
                         <p class="text-gray-600">
-                            Unsere App wurde speziell dafür entwickelt, den Familienalltag mit <strong class="text-teal-600">maximaler Einfachheit</strong> zu organisieren. Kein Schnickschnack, keine komplizierten Funktionen. So können Sie sich endlich auf das Wesentliche konzentrieren.
+                            Unsere App wurde speziell dafür entwickelt, den Familienalltag mit <strong class="text-brand-green">maximaler Einfachheit</strong> zu organisieren. Kein Schnickschnack, keine komplizierten Funktionen. So können Sie sich endlich auf das Wesentliche konzentrieren.
                         </p>
                     </div>
                 </div>
@@ -135,19 +148,19 @@
                     </div>
                     <!-- Step 1 -->
                     <div class="bg-white p-6 rounded-lg shadow-lg z-10">
-                        <div class="bg-teal-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-2xl mx-auto mb-4 border-4 border-white shadow-md">1</div>
+                        <div class="bg-brand-green text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-2xl mx-auto mb-4 border-4 border-white shadow-md">1</div>
                         <h3 class="font-bold text-xl mb-2">Aufgaben hinzufügen</h3>
                         <p class="text-gray-600">Öffnen Sie die intuitive App und fügen Sie Ihre wichtigsten Familienaufgaben hinzu.</p>
                     </div>
                     <!-- Step 2 -->
                     <div class="bg-white p-6 rounded-lg shadow-lg z-10">
-                        <div class="bg-teal-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-2xl mx-auto mb-4 border-4 border-white shadow-md">2</div>
+                        <div class="bg-brand-green text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-2xl mx-auto mb-4 border-4 border-white shadow-md">2</div>
                         <h3 class="font-bold text-xl mb-2">Tag strukturieren</h3>
                         <p class="text-gray-600">Wir strukturieren Ihren Tag und erinnern Sie an alles Wichtige – ganz ohne Registrierung.</p>
                     </div>
                     <!-- Step 3 -->
                     <div class="bg-white p-6 rounded-lg shadow-lg z-10">
-                        <div class="bg-teal-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-2xl mx-auto mb-4 border-4 border-white shadow-md">3</div>
+                        <div class="bg-brand-green text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-2xl mx-auto mb-4 border-4 border-white shadow-md">3</div>
                         <h3 class="font-bold text-xl mb-2">Ruhe genießen</h3>
                         <p class="text-gray-600">Genießen Sie einen harmonischeren Tag mit mehr Ruhe und klarer Organisation.</p>
                     </div>
@@ -160,6 +173,15 @@
         <section id="vision" class="bg-gray-50 py-16 md:py-24">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">So könnte Ihr Familienleben aussehen</h2>
+                
+                <!-- Video inserted here to visually support the transformation -->
+                <div class="max-w-4xl mx-auto mb-16 rounded-lg overflow-hidden shadow-2xl">
+                    <video autoplay loop muted playsinline class="w-full">
+                        <source src="ueberforderte_Mutter_findet_App_Loesung.mp4" type="video/mp4">
+                        Ihr Browser unterstützt das Video-Tag nicht.
+                    </video>
+                </div>
+
                 <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg shadow">
                         <h3 class="font-bold text-xl mb-4 text-red-800">Wenn sich nichts ändert...</h3>
@@ -191,19 +213,19 @@
                     <div class="bg-white p-8 rounded-lg shadow-lg text-center relative pt-12">
                         <img src="https://placehold.co/80x80/e0e7ff/4338ca?text=S" alt="Profilbild von Sarah K." class="rounded-full w-20 h-20 absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-white shadow-md">
                         <p class="italic text-gray-600 mb-4">"Als berufstätige Mutter war ich ständig am Rande des Burnouts. Diese App hat alles verändert. Endlich habe ich den Kopf frei und kann die Abende mit meinen Kindern genießen, anstatt nur To-Do-Listen abzuarbeiten."</p>
-                        <p class="font-bold text-teal-600">- Sarah K., Mutter von zwei Kindern</p>
+                        <p class="font-bold text-brand-green">- Sarah K., Mutter von zwei Kindern</p>
                     </div>
                     <!-- Testimonial 2 -->
                     <div class="bg-white p-8 rounded-lg shadow-lg text-center relative pt-12">
                         <img src="https://placehold.co/80x80/cffafe/0e7490?text=M" alt="Profilbild von Markus L." class="rounded-full w-20 h-20 absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-white shadow-md">
                         <p class="italic text-gray-600 mb-4">"Ich war der König der vergessenen Termine. Elternabende, Sporttraining... peinlich. Seit wir die App nutzen, ist das vorbei. Alles ist an einem Ort, und ich fühle mich endlich wie ein verlässlicher Partner und Vater."</p>
-                        <p class="font-bold text-teal-600">- Markus L., Vater</p>
+                        <p class="font-bold text-brand-green">- Markus L., Vater</p>
                     </div>
                     <!-- Testimonial 3 -->
                     <div class="bg-white p-8 rounded-lg shadow-lg text-center relative pt-12">
                         <img src="https://placehold.co/80x80/dcfce7/15803d?text=J" alt="Profilbild von Familie J." class="rounded-full w-20 h-20 absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-white shadow-md">
                         <p class="italic text-gray-600 mb-4">"Das Beste ist die Einfachheit. Kein Schnickschnack, den niemand braucht. Wir haben unsere Wochenend-Pflichten in 10 Minuten organisiert und hatten dadurch einen ganzen spontanen Nachmittag im Park. Unbezahlbar!"</p>
-                        <p class="font-bold text-teal-600">- Familie Jensen</p>
+                        <p class="font-bold text-brand-green">- Familie Jensen</p>
                     </div>
                 </div>
             </div>
@@ -223,7 +245,7 @@
 
         <!-- ===== Final CTA ===== -->
         <!-- The last chance to convert -->
-        <section id="cta-final" class="bg-teal-600 text-white py-16 md:py-24">
+        <section id="cta-final" class="bg-brand-green text-white py-16 md:py-24">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Bereit für ein harmonischeres Familienleben?</h2>
                 <p class="max-w-2xl mx-auto mb-8">
