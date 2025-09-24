@@ -1,65 +1,179 @@
 <!DOCTYPE html>
-<html lang="de" class="scroll-smooth">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Familien-Harmonie | Die einfachste App für Ihren Alltag</title>
+    <title>Simply do! | Die einfachste App für Ihren Alltag</title>
     
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts for a friendly look -->
+    <!-- Google Fonts for a modern look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     
     <style>
-        /* Using Poppins as the default font */
+        /* Using a custom font from Google Fonts */
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
-        /* Style for the hero background image section */
-        .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1200x800/a3e635/ffffff?text=Gl%C3%BCckliche+Familie');
+        /* Custom class for the hero background video overlay */
+        .hero-bg-video {
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-bg-video video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translateX(-50%) translateY(-50%);
             background-size: cover;
-            background-position: center;
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 font-sans leading-normal tracking-normal">
 
-    <!-- ===== Header & Hero Section ===== -->
-    <!-- This section grabs the user's attention with the main promise -->
-    <header class="hero-bg text-white">
-        <div class="container mx-auto px-6 py-24 md:py-32 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Schluss mit dem Familienchaos. <br> Hallo Harmonie.</h1>
+    <!-- ===== Header Section with Video Background ===== -->
+    <!-- The video background captures attention immediately -->
+    <header class="relative h-screen flex items-center justify-center text-white text-center">
+        <!-- The video element -->
+        <video autoplay loop muted playsinline class="absolute z-[-1] w-auto min-w-full min-h-full max-w-none object-cover">
+            <source src="Überforderte_Mutter_findet_App_Lösung.mp4" type="video/mp4">
+            Ihr Browser unterstützt das Video-Tag nicht.
+        </video>
+        <!-- Overlay for text readability -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+        <!-- Header Content -->
+        <div class="relative z-10 px-6">
+            <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">Schluss mit dem Familienchaos. <br> Hallo Harmonie.</h1>
             <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
-                Fühlen Sie sich im Familienalltag oft überfordert? Unsere einfache Task-App bringt Ordnung und Harmonie, damit Sie mehr unbeschwerte Zeit mit Ihrer Familie genießen.
+                Fühlen Sie sich im Familienalltag oft überfordert? <strong>Simply do!</strong> bringt Ordnung und Harmonie, damit Sie mehr unbeschwerte Zeit mit Ihrer Familie genießen.
             </p>
-            <a href="#cta" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
-                Nutzen Sie jetzt die Einfachheit!
-            </a>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <!-- App Store Button -->
+                <a href="#" class="bg-white text-black rounded-lg px-6 py-3 flex items-center justify-center space-x-3 hover:bg-gray-200 transition duration-300 w-full sm:w-auto font-bold">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.333 12.002a4.667 4.667 0 0 0-4.24-4.63c-1.32-.23-2.67.2-3.67.97-.99.78-1.78 1.93-2.13 3.25a.332.332 0 0 0 .32.42c1.37.1 2.58-.77 3.6-1.54.91-.68 1.48-1.75 1.52-2.82.02-.45.16-.9.41-1.28.31-.47.8-.75 1.35-.75.76 0 1.41.48 1.76 1.2.35.72.35 1.53.01 2.29-.34.76-1.03 1.45-1.92 1.75-.5.17-1.02.26-1.54.26-.6 0-1.19-.13-1.73-.39a.332.332 0 0 0-.41.13c-.45.69-.73 1.5-.73 2.38 0 1.05.37 2.05 1.05 2.82.68.77 1.6 1.25 2.62 1.39 1.02.14 2.05-.12 2.9-.71.85-.59 1.49-1.46 1.76-2.43a.333.333 0 0 0-.32-.42c-.2.01-.4.02-.6.02-.8 0-1.56-.2-2.22-.58-.66-.38-1.02-.97-1.02-1.65 0-.69.46-1.4.9-1.68.44-.28.97-.43 1.52-.43.55 0 1.09.15 1.56.44.25.15.53.23.82.23.23 0 .46-.05.67-.14a.335.335 0 0 0 .22-.44c-.23-.62-.35-1.28-.35-1.95a4.653 4.653 0 0 0 .01-1.09zM15.463 4.312a4.965 4.965 0 0 0-3.32 1.54c-.45.45-.82.97-1.1 1.55-.42-.51-.89-1-1.41-1.41a4.994 4.994 0 0 0-6.91 1.03C1.043 8.782 1.933 13.082 4.373 16.2c1.23 1.58 2.72 2.76 4.39 3.44.6.25 1.23.38 1.86.38.64 0 1.27-.14 1.85-.4.41-.18.82-.4 1.21-.65 1.72-1.12 3.03-2.82 3.73-4.75a.33.33 0 0 0-.27-.41 5.38 5.38 0 0 1-1.56.24c-1.3 0-2.46-.57-3.23-1.47-.77-.9-1.11-2.07-1-3.3.08-1.24.7-2.3 1.63-3.03.93-.72 2.1-1.05 3.29-.86a.333.333 0 0 0 .34-.3c.1-.8.4-1.57.88-2.24a5.02 5.02 0 0 0-1.5-1.04z"/></svg>
+                    <div>
+                        <span class="text-xs">Laden im</span>
+                        <span class="block font-semibold text-lg">App Store</span>
+                    </div>
+                </a>
+                <!-- Google Play Button -->
+                <a href="#" class="bg-white text-black rounded-lg px-6 py-3 flex items-center justify-center space-x-3 hover:bg-gray-200 transition duration-300 w-full sm:w-auto font-bold">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.53,9.23a2.05,2.05,0,0,0-1.28-1.28L13.38,2.2,4.82,7.34A2,2,0,0,0,3.5,9.23v5.54a2,2,0,0,0,1.32,1.89L11.7,21.8a2,2,0,0,0,2.14-1.22l1.62-3.24L20.25,16a2,2,0,0,0,1.28-1.28Z M4.82,14.77V9.23L11,5.55v4.27Zm1.33,0,5.09-2.61v5.22Zm8-8.23,3.87,2.23-3.87,1.93ZM12.3,10.82V5.55l6.18,3.17-2.6,1.3Zm0,1.36,5.09,2.61-5.09,2.61Zm-1.28,8.23L5.24,17.2a.25.25,0,0,1-.15-.22v-.22l5.09-2.61,4.27,2.14Z"/></svg>
+                     <div>
+                        <span class="text-xs uppercase">JETZT BEI</span>
+                        <span class="block font-semibold text-lg">Google Play</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </header>
 
     <main>
         <!-- ===== Problem Section ===== -->
-        <!-- Here, users recognize their own struggles -->
-        <section id="problem" class="py-16 md:py-24">
+        <!-- Here, the user recognizes their own struggle -->
+        <section id="problem" class="bg-white py-16 md:py-24">
             <div class="container mx-auto px-6">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="md:pr-8">
                         <h2 class="text-3xl font-bold text-gray-900 mb-4">Kommt Ihnen das bekannt vor?</h2>
-                        <p class="mb-4 text-gray-600">
-                            Vergessene Termine, unerledigte Aufgaben und ein ständiges Durcheinander bei den familiären Verpflichtungen. Schnell fühlt man sich überfordert, frustriert und hat die Sorge, dass im hektischen Familienleben wichtige Dinge untergehen.
+                        <p class="text-gray-600 mb-6">
+                           Vergessene Termine, unerledigte Aufgaben und ein ständiges Durcheinander. Der Familienalltag kann sich schnell wie ein unübersichtliches Puzzle anfühlen, das Ihnen die letzte Energie raubt.
                         </p>
-                        <blockquote class="border-l-4 border-teal-500 pl-4 italic text-gray-500 my-6">
-                            "Es ist ungerecht, dass Familien mit der Organisation ihres Alltags so kämpfen müssen, wenn es doch schön und einfach sein sollte."
+                         <blockquote class="border-l-4 border-teal-500 pl-4 italic text-gray-700">
+                           "Es ist einfach nicht fair, dass das Organisieren des Familienlebens so kompliziert sein muss, wenn es doch die schönste Zeit unseres Lebens sein sollte."
                         </blockquote>
                     </div>
                     <div>
                         <!-- Image showing a stressed family situation -->
-                        <img src="https://placehold.co/600x400/fecaca/991b1b?text=Stress+und+Chaos" alt="Eine überforderte Person am Schreibtisch" class="rounded-lg shadow-xl w-full">
+                        <img src="https://images.pexels.com/photos/7645325/pexels-photo-7645325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Eine attraktive, aber überforderte Mutter am Laptop, umgeben von Alltagschaos" class="rounded-lg shadow-xl w-full object-cover h-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Guide/Solution Section ===== -->
+        <!-- We position the app as the helpful guide -->
+        <section id="solution" class="bg-gray-50 py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <!-- Image showing the app on a phone -->
+                        <img src="https://placehold.co/600x400/d1fae5/065f46?text=Unsere+App+in+Aktion" alt="Screenshot der App-Oberfläche" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="order-1 md:order-2 md:pl-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Wir verstehen Sie – und wir haben die Lösung.</h2>
+                        <p class="mb-4 text-gray-600">
+                            Wir wissen, wie überwältigend es sein kann, den Überblick zu behalten und den Kopf frei zu kriegen.
+                        </p>
+                        <p class="text-gray-600">
+                            Unsere App wurde speziell dafür entwickelt, den Familienalltag mit <strong class="text-teal-600">maximaler Einfachheit</strong> zu organisieren. Kein Schnickschnack, keine komplizierten Funktionen. So können Sie sich endlich auf das Wesentliche konzentrieren.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Plan Section ===== -->
+        <!-- The simple 3-step plan to success -->
+        <section id="plan" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-20">In 3 einfachen Schritten zu mehr Harmonie</h2>
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto relative">
+                     <!-- Dotted line connecting the steps -->
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-px -translate-y-1/2">
+                        <svg width="100%" height="2"><line x1="0" y1="1" x2="100%" y2="1" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8 8"/></svg>
+                    </div>
+                    <!-- Step 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg z-10">
+                        <div class="bg-teal-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-2xl mx-auto mb-4 border-4 border-white shadow-md">1</div>
+                        <h3 class="font-bold text-xl mb-2">Aufgaben hinzufügen</h3>
+                        <p class="text-gray-600">Öffnen Sie die intuitive App und fügen Sie Ihre wichtigsten Familienaufgaben hinzu.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg z-10">
+                        <div class="bg-teal-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-2xl mx-auto mb-4 border-4 border-white shadow-md">2</div>
+                        <h3 class="font-bold text-xl mb-2">Tag strukturieren</h3>
+                        <p class="text-gray-600">Wir strukturieren Ihren Tag und erinnern Sie an alles Wichtige – ganz ohne Registrierung.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg z-10">
+                        <div class="bg-teal-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-2xl mx-auto mb-4 border-4 border-white shadow-md">3</div>
+                        <h3 class="font-bold text-xl mb-2">Ruhe genießen</h3>
+                        <p class="text-gray-600">Genießen Sie einen harmonischeren Tag mit mehr Ruhe und klarer Organisation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Vision of Success vs. Failure ===== -->
+        <!-- This shows the stakes and the reward -->
+        <section id="vision" class="bg-gray-50 py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">So könnte Ihr Familienleben aussehen</h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg shadow">
+                        <h3 class="font-bold text-xl mb-4 text-red-800">Wenn sich nichts ändert...</h3>
+                        <ul class="space-y-2 text-red-700">
+                            <li class="flex items-start"><span class="mr-2 mt-1">❌</span>Sie leiden weiterhin unter ständiger Überforderung.</li>
+                            <li class="flex items-start"><span class="mr-2 mt-1">❌</span>Wichtige Termine werden vergessen.</li>
+                            <li class="flex items-start"><span class="mr-2 mt-1">❌</span>Das Gefühl, dass das Familienleben von Chaos bestimmt wird.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg shadow">
+                        <h3 class="font-bold text-xl mb-4 text-green-800">Mit Simply do!...</h3>
+                        <ul class="space-y-2 text-green-700">
+                            <li class="flex items-start"><span class="mr-2 mt-1">✅</span>Sie erleben einen stressfreien Familienalltag.</li>
+                            <li class="flex items-start"><span class="mr-2 mt-1">✅</span>Alle Aufgaben sind mühelos erledigt.</li>
+                            <li class="flex items-start"><span class="mr-2 mt-1">✅</span>Mehr Zeit für gemeinsame, glückliche Momente bleibt.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -67,7 +181,7 @@
 
         <!-- ===== Testimonials Section ===== -->
         <!-- Real stories from families like yours -->
-        <section id="testimonials" class="py-16 md:py-24 bg-gray-100">
+        <section id="testimonials" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-gray-900 mb-20">Hören Sie, was Familien wie Ihre sagen</h2>
                 <div class="grid lg:grid-cols-3 gap-x-8 gap-y-20 max-w-6xl mx-auto">
@@ -95,27 +209,42 @@
 
         <!-- ===== Identity Transformation ===== -->
         <!-- The final emotional payoff -->
-        <section id="transformation" class="py-16 md:py-24 text-center">
+        <section id="transformation" class="py-16 md:py-24 text-center bg-gray-50">
             <div class="container mx-auto px-6">
-                <img src="https://placehold.co/150x150/a7f3d0/047857?text=Gelassen" alt="Eine gelassene und glückliche Person" class="rounded-full shadow-xl mx-auto mb-6 w-32 h-32">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Vom gestressten Manager zum gelassenen Familienoberhaupt.</h2>
-                <p class="max-w-2xl mx-auto text-gray-600">
-                    Werden Sie zu der organisierten und ruhigen Person, die ihren Familienalltag im Griff hat und die Zeit mit ihren Liebsten in vollen Zügen genießt.
+                <img src="https://placehold.co/120x120/a7f3d0/047857?text=Glücklich" alt="Eine entspannte und glückliche Person" class="rounded-full w-24 h-24 mx-auto mb-6 shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Werden Sie vom gestressten Manager zum gelassenen Familienoberhaupt.</h2>
+                <p class="max-w-2xl mx-auto mb-8 text-gray-600">
+                    Diese App ist mehr als nur ein Tool. Sie ist Ihr Wegbegleiter zu einer organisierten und gelassenen Person, die ihren Familienalltag souverän im Griff hat und die Zeit mit ihren Liebsten in vollen Zügen genießt.
                 </p>
             </div>
         </section>
 
-        <!-- ===== Final CTA Section ===== -->
-        <!-- The direct call to action, making it easy to buy -->
-        <section id="cta" class="bg-teal-600 text-white">
-            <div class="container mx-auto px-6 py-16 text-center">
-                <h2 class="text-3xl font-bold mb-4">Bereit für ein harmonischeres Familienleben?</h2>
+        <!-- ===== Final CTA ===== -->
+        <!-- The last chance to convert -->
+        <section id="cta-final" class="bg-teal-600 text-white py-16 md:py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Bereit für ein harmonischeres Familienleben?</h2>
                 <p class="max-w-2xl mx-auto mb-8">
                     Wenn Sie sich im täglichen Familienchaos überfordert fühlen und nach einfacher Organisation suchen, ist der Kauf unserer Task-App der richtige Schritt für Sie.
                 </p>
-                <a href="#" class="bg-white hover:bg-gray-200 text-teal-600 font-bold py-4 px-10 rounded-full text-xl transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
-                    Nutzen Sie jetzt die Einfachheit!
-                </a>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <!-- App Store Button -->
+                    <a href="#" class="bg-white text-black rounded-lg px-6 py-3 flex items-center justify-center space-x-3 hover:bg-gray-200 transition duration-300 w-full sm:w-auto font-bold">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.333 12.002a4.667 4.667 0 0 0-4.24-4.63c-1.32-.23-2.67.2-3.67.97-.99.78-1.78 1.93-2.13 3.25a.332.332 0 0 0 .32.42c1.37.1 2.58-.77 3.6-1.54.91-.68 1.48-1.75 1.52-2.82.02-.45.16-.9.41-1.28.31-.47.8-.75 1.35-.75.76 0 1.41.48 1.76 1.2.35.72.35 1.53.01 2.29-.34.76-1.03 1.45-1.92 1.75-.5.17-1.02.26-1.54.26-.6 0-1.19-.13-1.73-.39a.332.332 0 0 0-.41.13c-.45.69-.73 1.5-.73 2.38 0 1.05.37 2.05 1.05 2.82.68.77 1.6 1.25 2.62 1.39 1.02.14 2.05-.12 2.9-.71.85-.59 1.49-1.46 1.76-2.43a.333.333 0 0 0-.32-.42c-.2.01-.4.02-.6.02-.8 0-1.56-.2-2.22-.58-.66-.38-1.02-.97-1.02-1.65 0-.69.46-1.4.9-1.68.44-.28.97-.43 1.52-.43.55 0 1.09.15 1.56.44.25.15.53.23.82.23.23 0 .46-.05.67-.14a.335.335 0 0 0 .22-.44c-.23-.62-.35-1.28-.35-1.95a4.653 4.653 0 0 0 .01-1.09zM15.463 4.312a4.965 4.965 0 0 0-3.32 1.54c-.45.45-.82.97-1.1 1.55-.42-.51-.89-1-1.41-1.41a4.994 4.994 0 0 0-6.91 1.03C1.043 8.782 1.933 13.082 4.373 16.2c1.23 1.58 2.72 2.76 4.39 3.44.6.25 1.23.38 1.86.38.64 0 1.27-.14 1.85-.4.41-.18.82-.4 1.21-.65 1.72-1.12 3.03-2.82 3.73-4.75a.33.33 0 0 0-.27-.41 5.38 5.38 0 0 1-1.56.24c-1.3 0-2.46-.57-3.23-1.47-.77-.9-1.11-2.07-1-3.3.08-1.24.7-2.3 1.63-3.03.93-.72 2.1-1.05 3.29-.86a.333.333 0 0 0 .34-.3c.1-.8.4-1.57.88-2.24a5.02 5.02 0 0 0-1.5-1.04z"/></svg>
+                        <div>
+                            <span class="text-xs">Laden im</span>
+                            <span class="block font-semibold text-lg">App Store</span>
+                        </div>
+                    </a>
+                    <!-- Google Play Button -->
+                    <a href="#" class="bg-white text-black rounded-lg px-6 py-3 flex items-center justify-center space-x-3 hover:bg-gray-200 transition duration-300 w-full sm:w-auto font-bold">
+                       <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.53,9.23a2.05,2.05,0,0,0-1.28-1.28L13.38,2.2,4.82,7.34A2,2,0,0,0,3.5,9.23v5.54a2,2,0,0,0,1.32,1.89L11.7,21.8a2,2,0,0,0,2.14-1.22l1.62-3.24L20.25,16a2,2,0,0,0,1.28-1.28Z M4.82,14.77V9.23L11,5.55v4.27Zm1.33,0,5.09-2.61v5.22Zm8-8.23,3.87,2.23-3.87,1.93ZM12.3,10.82V5.55l6.18,3.17-2.6,1.3Zm0,1.36,5.09,2.61-5.09,2.61Zm-1.28,8.23L5.24,17.2a.25.25,0,0,1-.15-.22v-.22l5.09-2.61,4.27,2.14Z"/></svg>
+                         <div>
+                            <span class="text-xs uppercase">JETZT BEI</span>
+                            <span class="block font-semibold text-lg">Google Play</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -123,7 +252,7 @@
     <!-- ===== Footer ===== -->
     <footer class="bg-gray-800 text-gray-400 py-6">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 Ihre Familien-App. Alle Rechte vorbehalten.</p>
+            <p>&copy; 2025 Simply do!. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 
